@@ -1,0 +1,1391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>NIMBLUX | Technology • Innovation • Community</title>
+
+<meta name="description"
+content="NIMBLUX is a technology community helping developers, students, and innovators grow through AI, software development, hackathons, internships, and opportunities.">
+<meta property="og:title" content="NIMBLUX">
+<meta property="og:description" content="Technology • Innovation • Community">
+<meta property="og:site_name" content="NIMBLUX">
+<link rel="canonical" href="https://nimblux.liveblog365.com/">
+
+<link rel="icon" href="assets/logo.png">
+<link rel="stylesheet" href="style.css">
+    <style>/* ==========================
+   NIMBLUX PREMIUM STYLE.CSS
+   Abstract • Luxury • Modern
+========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap');
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Manrope',sans-serif;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+background:#050505;
+color:#ffffff;
+overflow-x:hidden;
+position:relative;
+}
+
+/* ==========================
+   ABSTRACT BACKGROUND
+========================== */
+
+body::before{
+content:"";
+position:fixed;
+width:900px;
+height:900px;
+background:
+radial-gradient(circle,
+rgba(255,255,255,.08),
+transparent 70%);
+top:-300px;
+left:-250px;
+filter:blur(100px);
+animation:float1 12s ease-in-out infinite;
+z-index:-2;
+}
+
+body::after{
+content:"";
+position:fixed;
+width:800px;
+height:800px;
+background:
+radial-gradient(circle,
+rgba(255,255,255,.04),
+transparent 70%);
+bottom:-300px;
+right:-250px;
+filter:blur(120px);
+animation:float2 14s ease-in-out infinite;
+z-index:-2;
+}
+
+@keyframes float1{
+0%,100%{
+transform:translateY(0px);
+}
+50%{
+transform:translateY(40px);
+}
+}
+
+@keyframes float2{
+0%,100%{
+transform:translateY(0px);
+}
+50%{
+transform:translateY(-40px);
+}
+}
+
+/* ==========================
+   NAVBAR
+========================== */
+
+.navbar{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+padding:20px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:rgba(5,5,5,.7);
+backdrop-filter:blur(20px);
+border-bottom:1px solid rgba(255,255,255,.05);
+z-index:1000;
+}
+
+.logo img{
+height:60px;
+}
+
+.nav-links{
+display:flex;
+align-items:center;
+gap:30px;
+list-style:none;
+}
+
+.nav-links a{
+color:#ffffff;
+text-decoration:none;
+font-weight:500;
+transition:.3s;
+}
+
+.nav-links a:hover{
+opacity:.7;
+}
+
+.join-btn{
+background:white;
+color:black !important;
+padding:12px 24px;
+border-radius:50px;
+font-weight:700;
+}
+
+.menu-btn{
+display:none;
+font-size:25px;
+cursor:pointer;
+}
+
+/* ==========================
+   HERO SECTION
+========================== */
+
+.hero{
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:0 20px;
+position:relative;
+}
+
+.hero-content{
+max-width:1100px;
+}
+
+.badge{
+display:inline-block;
+padding:12px 24px;
+border:1px solid rgba(255,255,255,.08);
+background:rgba(255,255,255,.03);
+border-radius:999px;
+backdrop-filter:blur(20px);
+margin-bottom:30px;
+}
+
+.hero h1{
+font-size:90px;
+font-weight:800;
+line-height:1;
+letter-spacing:-4px;
+margin-bottom:25px;
+
+background:linear-gradient(
+90deg,
+#ffffff,
+#d1d1d1,
+#ffffff
+);
+
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+.hero p{
+max-width:800px;
+margin:auto;
+font-size:20px;
+line-height:1.8;
+color:#a1a1aa;
+}
+
+.hero-buttons{
+margin-top:40px;
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.primary-btn{
+background:white;
+color:black;
+padding:16px 35px;
+border-radius:50px;
+font-weight:700;
+text-decoration:none;
+transition:.3s;
+}
+
+.secondary-btn{
+padding:16px 35px;
+border-radius:50px;
+border:1px solid rgba(255,255,255,.1);
+text-decoration:none;
+color:white;
+transition:.3s;
+}
+
+.primary-btn:hover,
+.secondary-btn:hover{
+transform:translateY(-4px);
+}
+
+/* ==========================
+   SECTIONS
+========================== */
+
+section{
+padding:120px 8%;
+}
+
+.section-title{
+text-align:center;
+font-size:55px;
+margin-bottom:60px;
+font-weight:800;
+}
+
+/* ==========================
+   STATS
+========================== */
+
+.stats{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:25px;
+}
+
+.stat-card{
+padding:40px;
+text-align:center;
+
+background:rgba(255,255,255,.03);
+border:1px solid rgba(255,255,255,.05);
+
+backdrop-filter:blur(20px);
+
+border-radius:24px;
+}
+
+.stat-card h2{
+font-size:65px;
+font-weight:800;
+margin-bottom:10px;
+}
+
+.stat-card p{
+color:#a1a1aa;
+}
+
+/* ==========================
+   ABOUT
+========================== */
+
+.about{
+text-align:center;
+}
+
+.about p{
+max-width:900px;
+margin:auto;
+font-size:20px;
+line-height:2;
+color:#a1a1aa;
+}
+
+/* ==========================
+   CARDS
+========================== */
+
+.cards{
+display:grid;
+grid-template-columns:
+repeat(auto-fit,minmax(300px,1fr));
+
+gap:30px;
+}
+
+.card{
+padding:35px;
+
+background:
+rgba(255,255,255,.03);
+
+backdrop-filter:
+blur(20px);
+
+border:
+1px solid rgba(255,255,255,.05);
+
+border-radius:28px;
+
+transition:.4s;
+}
+
+.card:hover{
+
+transform:
+translateY(-10px);
+
+border-color:
+rgba(255,255,255,.15);
+
+box-shadow:
+0 25px 50px rgba(255,255,255,.04);
+
+}
+
+.card h3{
+margin-bottom:15px;
+font-size:25px;
+}
+
+.card p{
+color:#a1a1aa;
+line-height:1.8;
+}
+
+/* ==========================
+   TESTIMONIALS
+========================== */
+
+.testimonials .card{
+text-align:center;
+font-size:18px;
+}
+
+/* ==========================
+   FAQ
+========================== */
+
+.faq-container{
+max-width:900px;
+margin:auto;
+}
+
+.faq{
+margin-bottom:20px;
+border-radius:20px;
+overflow:hidden;
+border:1px solid rgba(255,255,255,.05);
+}
+
+.faq-question{
+width:100%;
+padding:22px;
+background:rgba(255,255,255,.03);
+color:white;
+font-size:18px;
+border:none;
+text-align:left;
+cursor:pointer;
+}
+
+.faq-answer{
+display:none;
+padding:20px;
+color:#a1a1aa;
+line-height:1.8;
+background:#0b0b0b;
+}
+
+/* ==========================
+   CTA
+========================== */
+
+.cta-box{
+text-align:center;
+
+padding:80px;
+
+border-radius:35px;
+
+background:
+linear-gradient(
+135deg,
+rgba(255,255,255,.08),
+rgba(255,255,255,.02)
+);
+
+border:
+1px solid rgba(255,255,255,.05);
+}
+
+.cta-box h2{
+font-size:60px;
+margin-bottom:20px;
+}
+
+.cta-box p{
+max-width:700px;
+margin:auto;
+color:#a1a1aa;
+line-height:1.8;
+}
+
+.cta-box a{
+display:inline-block;
+margin-top:30px;
+padding:18px 36px;
+background:white;
+color:black;
+font-weight:700;
+border-radius:50px;
+text-decoration:none;
+}
+
+/* ==========================
+   FOOTER
+========================== */
+
+footer{
+padding:80px 8%;
+text-align:center;
+border-top:1px solid rgba(255,255,255,.05);
+}
+
+footer img{
+height:80px;
+margin-bottom:20px;
+}
+
+footer h3{
+margin-bottom:10px;
+}
+
+.footer-links{
+display:flex;
+justify-content:center;
+gap:25px;
+margin:25px 0;
+flex-wrap:wrap;
+}
+
+.footer-links a{
+text-decoration:none;
+color:white;
+}
+
+/* ==========================
+   WHATSAPP BUTTON
+========================== */
+
+.whatsapp{
+position:fixed;
+bottom:25px;
+right:25px;
+
+width:65px;
+height:65px;
+
+background:#25D366;
+
+border-radius:50%;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+font-size:30px;
+color:white;
+
+text-decoration:none;
+
+box-shadow:
+0 10px 30px rgba(37,211,102,.4);
+
+z-index:999;
+}
+
+/* ==========================
+   MOBILE
+========================== */
+
+@media(max-width:992px){
+
+.hero h1{
+font-size:65px;
+}
+
+.stats{
+grid-template-columns:1fr 1fr;
+}
+
+.section-title{
+font-size:42px;
+}
+
+}
+
+@media(max-width:768px){
+
+.nav-links{
+display:none;
+}
+
+.menu-btn{
+display:block;
+}
+
+.hero h1{
+font-size:48px;
+}
+
+.hero p{
+font-size:17px;
+}
+
+.stats{
+grid-template-columns:1fr;
+}
+
+.cta-box{
+padding:40px 25px;
+}
+
+.cta-box h2{
+font-size:40px;
+}
+
+}
+    
+    </style>
+    
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<script type="application/ld+json">
+{
+ "@context":"https://schema.org",
+ "@type":"Organization",
+ "name":"NIMBLUX",
+ "url":"https://nimblux.liveblog365.com",
+ "logo":"https://nimblux.liveblog365.com/assets/logo.png"
+}
+</script>
+   
+
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<header>
+
+<nav class="navbar">
+
+<div class="logo">
+
+<img src="assets/logo.png" alt="NIMBLUX">
+
+</div>
+
+<ul class="nav-links">
+
+<li><a href="#about">About</a></li>
+<li><a href="#offer">Services</a></li>
+<li><a href="#showcase">Community</a></li>
+<li><a href="#faq">FAQ</a></li>
+
+<li>
+
+<a href="https://www.linkedin.com/company/nimblux"
+target="_blank">
+
+LinkedIn
+
+</a>
+
+</li>
+
+<li>
+
+<a class="join-btn"
+href="https://chat.whatsapp.com/HtCZLxwOrsoDfSCRiESyIO"
+target="_blank">
+
+Join Community
+
+</a>
+
+</li>
+
+</ul>
+
+<div class="menu-btn">
+
+<i class="fa-solid fa-bars"></i>
+
+</div>
+
+</nav>
+
+</header>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="hero-content">
+
+<div class="badge">
+
+🚀 500+ Members Growing Together
+
+</div>
+
+<h1>
+
+The Future Of
+Learning,
+Building &
+Innovation
+
+</h1>
+
+<p>
+
+Join developers, students, creators, and innovators
+discovering opportunities, AI, software development,
+hackathons, internships, and growth.
+
+</p>
+
+<div class="hero-buttons">
+
+<a class="primary-btn"
+href="https://chat.whatsapp.com/HtCZLxwOrsoDfSCRiESyIO"
+target="_blank">
+
+Join Community
+
+</a>
+
+<a class="secondary-btn"
+href="#offer">
+
+Explore Opportunities
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- STATS -->
+
+<section class="stats">
+
+<div class="stat-card">
+
+<h2 class="counter" data-target="500">0</h2>
+
+<p>Community Members</p>
+
+</div>
+
+<div class="stat-card">
+
+<h2 class="counter" data-target="100">0</h2>
+
+<p>Opportunities Shared</p>
+
+</div>
+
+<div class="stat-card">
+
+<h2 class="counter" data-target="50">0</h2>
+
+<p>Events & Challenges</p>
+
+</div>
+
+<div class="stat-card">
+
+<h2>24/7</h2>
+
+<p>Learning Support</p>
+
+</div>
+
+</section>
+
+<!-- ABOUT -->
+
+<section id="about" class="about">
+
+<h2>About NIMBLUX</h2>
+
+<p>
+
+NIMBLUX is a technology-driven community empowering
+developers, students, creators, and innovators through
+Artificial Intelligence, Software Development,
+Open Source, Hackathons, Internships,
+and Career Opportunities.
+
+</p>
+
+</section>
+
+<!-- WHAT WE OFFER -->
+
+<section id="offer">
+
+<h2 class="section-title">
+
+What We Offer
+
+</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>🤖 Artificial Intelligence</h3>
+<p>Explore AI, ML, automation and future technologies.</p>
+</div>
+
+<div class="card">
+<h3>💻 Software Development</h3>
+<p>Frontend, backend and full stack development.</p>
+</div>
+
+<div class="card">
+<h3>🏆 Hackathons</h3>
+<p>Participate in national and global competitions.</p>
+</div>
+
+<div class="card">
+<h3>💼 Internships</h3>
+<p>Discover career opportunities and internships.</p>
+</div>
+
+<div class="card">
+<h3>🌍 Open Source</h3>
+<p>Contribute and collaborate on projects.</p>
+</div>
+
+<div class="card">
+<h3>📚 Learning Resources</h3>
+<p>Courses, roadmaps and tech resources.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- FEATURED -->
+
+<section class="featured">
+
+<h2 class="section-title">
+
+Featured Opportunities
+
+</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Hackathons</h3>
+</div>
+
+<div class="card">
+<h3>Internships</h3>
+</div>
+
+<div class="card">
+<h3>Coding Challenges</h3>
+</div>
+
+<div class="card">
+<h3>Workshops</h3>
+</div>
+
+<div class="card">
+<h3>Scholarships</h3>
+</div>
+
+<div class="card">
+<h3>Community Events</h3>
+</div>
+
+</div>
+
+</section>
+
+<!-- SHOWCASE -->
+
+<section id="showcase">
+
+<h2 class="section-title">
+
+Community Showcase
+
+</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>🏅 Achievements</h3>
+<p>Member success stories and milestones.</p>
+</div>
+
+<div class="card">
+<h3>🚀 Projects</h3>
+<p>Real-world projects built by members.</p>
+</div>
+
+<div class="card">
+<h3>🌍 Events</h3>
+<p>Community-driven events and meetups.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- TESTIMONIALS -->
+
+<section class="testimonials">
+
+<h2 class="section-title">
+
+Community Feedback
+
+</h2>
+
+<div class="cards">
+
+<div class="card">
+
+⭐⭐⭐⭐⭐
+
+<p>
+
+Amazing community for developers and students.
+
+</p>
+
+</div>
+
+<div class="card">
+
+⭐⭐⭐⭐⭐
+
+<p>
+
+Found hackathons and learning opportunities easily.
+
+</p>
+
+</div>
+
+<div class="card">
+
+⭐⭐⭐⭐⭐
+
+<p>
+
+Best place to connect with like-minded people.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- FAQ -->
+
+<section id="faq">
+
+<h2 class="section-title">
+
+Frequently Asked Questions
+
+</h2>
+
+<div class="faq-container">
+
+<div class="faq">
+
+<button class="faq-question">
+
+What is NIMBLUX?
+
+</button>
+
+<div class="faq-answer">
+
+A technology community focused on learning,
+innovation and growth.
+
+</div>
+
+</div>
+
+<div class="faq">
+
+<button class="faq-question">
+
+Who can join?
+
+</button>
+
+<div class="faq-answer">
+
+Students, developers, creators and innovators.
+
+</div>
+
+</div>
+
+<div class="faq">
+
+<button class="faq-question">
+
+Is it free?
+
+</button>
+
+<div class="faq-answer">
+
+Yes, joining the community is completely free.
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- CTA -->
+
+<section class="cta">
+
+<div class="cta-box">
+
+<h2>
+
+Ready To Build The Future?
+
+</h2>
+
+<p>
+
+Join NIMBLUX and grow with a community of
+builders, learners and innovators.
+
+</p>
+
+<a href="https://chat.whatsapp.com/HtCZLxwOrsoDfSCRiESyIO"
+target="_blank">
+
+Join The Community
+
+</a>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+<img src="assets/logo.png">
+
+<h3>NIMBLUX</h3>
+
+<p>
+
+Technology • Innovation • Community
+
+</p>
+
+<div class="footer-links">
+
+<a href="#">Home</a>
+
+<a href="https://www.linkedin.com/company/nimblux">
+LinkedIn
+</a>
+
+<a href="https://github.com/orgs/Nimblux/dashboard">
+GitHub
+</a>
+
+<a href="https://www.youtube.com/@joinnimblux">
+YouTube
+</a>
+
+<a href="https://www.instagram.com/joinnimblux/">
+    Instagram
+    </a>
+<a href="https://x.com/joinimblux">
+X
+</a>
+
+</div>
+
+<p>
+
+© 2026 NIMBLUX. All Rights Reserved.
+
+</p>
+
+</footer>
+
+<!-- FLOATING WHATSAPP -->
+
+<a href="https://chat.whatsapp.com/HtCZLxwOrsoDfSCRiESyIO"
+target="_blank"
+class="whatsapp">
+
+<i class="fa-brands fa-whatsapp"></i>
+
+</a>
+
+<script src="script.js"></script>
+<script>
+    /* ==========================
+   NIMBLUX PREMIUM SCRIPT.JS
+========================== */
+
+// Mobile Menu
+
+const menuBtn = document.querySelector(".menu-btn");
+const navLinks = document.querySelector(".nav-links");
+
+if(menuBtn){
+
+menuBtn.addEventListener("click", () => {
+
+navLinks.classList.toggle("active");
+
+});
+
+}
+
+/* ==========================
+   Navbar Scroll Effect
+========================== */
+
+const navbar = document.querySelector(".navbar");
+
+window.addEventListener("scroll", () => {
+
+if(window.scrollY > 50){
+
+navbar.style.background = "rgba(5,5,5,.95)";
+navbar.style.backdropFilter = "blur(25px)";
+navbar.style.borderBottom =
+"1px solid rgba(255,255,255,.08)";
+
+}else{
+
+navbar.style.background = "rgba(5,5,5,.7)";
+navbar.style.borderBottom =
+"1px solid rgba(255,255,255,.05)";
+
+}
+
+});
+
+/* ==========================
+   Animated Counters
+========================== */
+
+const counters = document.querySelectorAll(".counter");
+
+const startCounter = () => {
+
+counters.forEach(counter => {
+
+const target = +counter.getAttribute("data-target");
+
+let count = 0;
+
+const updateCounter = () => {
+
+const increment = target / 80;
+
+if(count < target){
+
+count += increment;
+
+counter.innerText =
+Math.ceil(count);
+
+setTimeout(updateCounter, 20);
+
+}else{
+
+counter.innerText =
+target + "+";
+
+}
+
+};
+
+updateCounter();
+
+});
+
+};
+
+let counterStarted = false;
+
+const statsSection =
+document.querySelector(".stats");
+
+window.addEventListener("scroll", () => {
+
+if(!statsSection) return;
+
+const sectionTop =
+statsSection.offsetTop - 300;
+
+if(
+window.scrollY > sectionTop &&
+!counterStarted
+){
+
+startCounter();
+counterStarted = true;
+
+}
+
+});
+
+/* ==========================
+   FAQ Accordion
+========================== */
+
+const faqQuestions =
+document.querySelectorAll(".faq-question");
+
+faqQuestions.forEach(question => {
+
+question.addEventListener("click", () => {
+
+const answer =
+question.nextElementSibling;
+
+const isVisible =
+answer.style.display === "block";
+
+document
+.querySelectorAll(".faq-answer")
+.forEach(item => {
+
+item.style.display = "none";
+
+});
+
+if(!isVisible){
+
+answer.style.display = "block";
+
+}
+
+});
+
+});
+
+/* ==========================
+   Scroll Reveal Animation
+========================== */
+
+const revealElements =
+document.querySelectorAll(
+".card, .stat-card, .about, .cta-box"
+);
+
+const revealOnScroll = () => {
+
+revealElements.forEach(element => {
+
+const windowHeight =
+window.innerHeight;
+
+const revealTop =
+element.getBoundingClientRect().top;
+
+const revealPoint = 120;
+
+if(revealTop < windowHeight - revealPoint){
+
+element.classList.add("show");
+
+}
+
+});
+
+};
+
+window.addEventListener(
+"scroll",
+revealOnScroll
+);
+
+revealOnScroll();
+
+/* ==========================
+   Smooth Fade Effect
+========================== */
+
+document
+.querySelectorAll('a[href^="#"]')
+.forEach(anchor => {
+
+anchor.addEventListener(
+"click",
+function(e){
+
+e.preventDefault();
+
+const target =
+document.querySelector(
+this.getAttribute("href")
+);
+
+if(target){
+
+target.scrollIntoView({
+behavior:"smooth"
+});
+
+}
+
+});
+
+});
+
+/* ==========================
+   Hero Typing Effect
+========================== */
+
+const heroTitle =
+document.querySelector(".hero h1");
+
+if(heroTitle){
+
+heroTitle.style.opacity = "0";
+
+setTimeout(() => {
+
+heroTitle.style.transition =
+"all 1.5s ease";
+
+heroTitle.style.opacity = "1";
+heroTitle.style.transform =
+"translateY(0px)";
+
+},300);
+
+}
+
+/* ==========================
+   Floating Animation
+========================== */
+
+const cards =
+document.querySelectorAll(".card");
+
+cards.forEach((card,index)=>{
+
+card.style.animation =
+`floatCard 6s ease-in-out ${index * 0.2}s infinite`;
+
+});
+
+/* ==========================
+   Console Branding
+========================== */
+
+console.log(`
+🚀 NIMBLUX
+Technology • Innovation • Community
+
+Website Loaded Successfully
+500+ Members Growing Together
+`);
+
+/* ==========================
+   Premium Loader (Optional)
+========================== */
+
+window.addEventListener("load", () => {
+
+document.body.classList.add("loaded");
+
+});
+
+/* ==========================
+   Intersection Observer
+========================== */
+
+const observer = new IntersectionObserver(
+
+(entries) => {
+
+entries.forEach(entry => {
+
+if(entry.isIntersecting){
+
+entry.target.classList.add(
+"visible"
+);
+
+}
+
+});
+
+},
+
+{
+threshold:0.15
+}
+
+);
+
+document
+.querySelectorAll(
+".card, .stat-card, .about, .cta-box"
+)
+.forEach(el => {
+
+observer.observe(el);
+
+});
+
+/* ==========================
+   Current Year Footer
+========================== */
+
+const yearElement =
+document.querySelector(".year");
+
+if(yearElement){
+
+yearElement.textContent =
+new Date().getFullYear();
+
+}
+    </script>
+</body>
+</html>
